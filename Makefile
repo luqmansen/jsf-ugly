@@ -2,7 +2,7 @@ build:
 	mvn package
 	docker-compose build
 
-start:
+run:
 	docker-compose up
 
 
