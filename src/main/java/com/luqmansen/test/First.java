@@ -6,10 +6,10 @@ import javax.faces.bean.ManagedBean;
 public class First {
 
     public First(){
-        System.out.println("Test");
+        System.out.println("Yaay !!");
     }
 
     public String getMessage(){
-        return "Test";
+        return "Yaay !!!";
     }
 }
