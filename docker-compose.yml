@@ -6,5 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: luqmansen/jsf-ugly
     ports:
     - "8080:8080"

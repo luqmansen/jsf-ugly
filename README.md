@@ -8,13 +8,17 @@ Ugly JavaServer Faces App
 - maven 3.6.3
 - docker
 
-## How to run
+## Running
+#### Development
 ```bash
 make build
 make run
  ```
-
-app will running on localhost:8080
+#### From Dockerhub
+```
+docker pull luqmansen/jsf-ugly
+```
+App will running on localhost:8080
 
 ## Notes
 Image used in docker is slim version which is bare minimum tomcat.
