@@ -8,4 +8,4 @@ services:
       dockerfile: Dockerfile
     image: luqmansen/jsf-ugly
     ports:
-    - "8080:8080"
+    - "$PORT:8080"
