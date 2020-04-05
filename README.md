@@ -3,6 +3,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/luqmansen/jsf-ugly)
 
 Ugly JavaServer Faces App
+
+## Demo
+http://jsfu.herokuapp.com/
+
+
 ## Requirements
 - open jdk version 11
 - maven 3.6.3
