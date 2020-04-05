@@ -1,4 +1,0 @@
-<Connector protocol="HTTP/1.1"
-           connectionTimeout="20000"
-           port="9090" 
-           redirectPort="8443" />

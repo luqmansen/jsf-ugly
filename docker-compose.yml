@@ -3,9 +3,11 @@ version: '3.7'
 services:
   tomcat:
     container_name: jsf-app
+    environment: 
+      - PORT=6969
     build:
       context: .
       dockerfile: Dockerfile
     image: luqmansen/jsf-ugly
     ports:
-    - "$PORT:8080"
+    - "8080:6969"
