@@ -1,6 +1,8 @@
 # jsf-ugly
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub last commit](https://img.shields.io/github/last-commit/luqmansen/jsf-ugly)
+[![HitCount](http://hits.dwyl.com/luqmansen/jsf-ugly.svg)](http://hits.dwyl.com/luqmansen/jsf-ugly)
+[![Twitter](https://img.shields.io/twitter/follow/luqmansen_?label=Follow&style=social)](https://twitter.com/luqmansen_)
 
 Ugly JavaServer Faces App
 
