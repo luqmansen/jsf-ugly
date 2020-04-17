@@ -6,6 +6,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.validator.ValidatorException;
+import java.beans.BeanProperty;
 import java.util.Date;
 import java.util.List;
 
@@ -140,6 +141,7 @@ public class StudentBean {
         }
     }
 
+    @BeanProperty
     public String storeFormData(){
         boolean stored = true;
         FacesMessage message = null;
