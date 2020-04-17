@@ -1,13 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns = "http://www.w3.org/1999/xhtml">
-    <head>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
         <title>Hellow</title>
-    </head>
+    </h:head>
 
-    <body>
+    <h:body>
+        <h:outputStylesheet library="css" name="main.css"  />
         <h1 style="text-align: center">#{first.getMessage()}</h1>
-        <img style="width:50% ;display: block; margin-left: auto; margin-right: auto; width: 50%" src="https://lh3.googleusercontent.com/-HwC1hSZFS84/Xonjok5gIsI/AAAAAAAAVPA/mD0hAntm2rMKFLjeuNvswjxx0qknX0B-QCK8BGAsYHg/s512/2020-04-05.png" alt="your internet suck, please turn it on"/>
-    </body>
+        <h:graphicImage styleClass="center-image" library="images" name="yaay.png"/>
+        <br></br>
+        <br></br>
+        <h:link outcome="studentform" styleClass="btn btn--pill btn--blue" value="Isi Form"/>
+    </h:body>
 </html>
