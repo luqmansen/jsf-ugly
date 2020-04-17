@@ -9,5 +9,11 @@ services:
       context: .
       dockerfile: Dockerfile
     image: luqmansen/jsf-ugly
+    volumes:
+      - './target/:/home/webapps/'
+#      - './src/main/webapp/:/home/webapps/ROOT'
     ports:
     - "8080:6969"
+
+volumes:
+  tomcat_jsf:

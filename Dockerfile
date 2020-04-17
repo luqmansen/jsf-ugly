@@ -13,6 +13,9 @@ RUN chmod +x /usr/local/tomcat/bin/remap.sh
 RUN chmod +x /usr/local/tomcat/bin/run.sh
 
 RUN ["rm", "-fr", "/usr/local/tomcat/webapps/ROOT"]
-COPY ./target/ugly-jsf.war /usr/local/tomcat/webapps/ROOT.war
+
+COPY ./target/ROOT.war /home/webapps/
+RUN ln -s /home/webapps/ROOT.war /usr/local/tomcat/webapps/
+RUN ln -s /home/webapps/ROOT /usr/local/tomcat/webapps/
 
 CMD ["run.sh"]
