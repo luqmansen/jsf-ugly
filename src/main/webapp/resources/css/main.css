@@ -598,7 +598,7 @@ table.container tr td {
 }
 
 .card-3 .card-heading {
-  background: url("../../images/DROBWJ3VoAACdZm.jpg") top left/cover no-repeat;
+  background: url("#{resource['images/dipo-bg.jpg']}") top left/cover no-repeat;
   display: table-cell;
   width: 100%;
 }

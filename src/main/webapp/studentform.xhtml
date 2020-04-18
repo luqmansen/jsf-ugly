@@ -2,29 +2,24 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 <h:head>
-    <!-- Required meta tags-->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content="Colorlib Templates"/>
     <meta name="author" content="Colorlib"/>
     <meta name="keywords" content="Colorlib Templates"/>
-
     <title>Form Survei Mahasiswa</title>
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet"/>
-
 </h:head>
-
 <h:body styleClass="">
 <h:outputStylesheet library="css" name="main.css"  />
 <h:outputStylesheet library="vendor" name="datepicker/daterangepicker.css"  />
 <h:outputStylesheet library="css" name="select2.min.css"  />
 <h:outputStylesheet library="vendor" name="font-awesome-4.7/css/font-awesome.min.css"  />
-<h:outputStylesheet library="vendor" name="mdi-font/css/material-design-iconic-font.min.css"  />
-
+<h:outputStylesheet library="css" name="material-design-iconic-font.min.css"  />
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
     <div class="wrapper wrapper--w780">
         <div class="card card-3">
@@ -40,7 +35,6 @@
                                      value="#{StudentBean.firstname}"
                                      required="true"/>
                         <h:message for="namadepan" style="color: red"/>
-
                     </div>
                     <div class="input-group">
                         <h:inputText label="Nama Belakang"
@@ -50,7 +44,6 @@
                                      value="#{StudentBean.lastname}"
                                      required="true"/>
                         <h:message for="namabelakang" style="color: red"/>
-
                     </div>
                     <div class="input-group">
                         <h:inputText label="Alamat rumah"
@@ -70,7 +63,6 @@
                                      value="#{StudentBean.cityAddress}"
                                      required="true"/>
                         <h:message for="cityaddress" style="color: red"/>
-
                     </div>
                     <div class="input-group">
                         <h:inputText label="Negara Bagian"
@@ -122,7 +114,6 @@
                         <h:message for="tanggalsurvei" style="color: red"/>
 
                     </div>
-<!--                </form>-->
                 <h2 class="title">Hal yang Paling Disukai di Kampus</h2>
                     <h:selectManyCheckbox styleClass="container" value="#{StudentBean.likeAbout}">
                         <f:selectItem itemLabel="Siswa" itemValue="Siswa"/>
@@ -132,7 +123,6 @@
                         <f:selectItem itemLabel="Kamar" itemValue="Kamar"/>
                         <f:selectItem itemLabel="Olahraga" itemValue="Olahraga"/>
                     </h:selectManyCheckbox>
-<!--                </form>-->
                 <h2 class="title">Bagaimana Anda Tertarik dengan Universitas Diponegoro?</h2>
                 <h:selectOneRadio styleClass="container" value="#{StudentBean.howInterest}">
                     <f:selectItem itemLabel="Teman" itemValue="Teman"/>
@@ -159,9 +149,7 @@
                              value="#{StudentBean.additionalComment}"
                              required="false"/>
                 <h:message for="comment" style="color: red"/>
-
-
-                    <div class="p-t-10">
+               <div class="p-t-10">
                         <h:commandButton styleClass="btn btn--pill btn--green" value="Submit" action="#{StudentBean.storeFormData}"/>
                     </div>
                 </h:form>
@@ -172,12 +160,10 @@
         </div>
     </div>
 </div>
-
 <h:outputScript library="vendor" name="jquery/jquery.min.js" target="body" />
 <h:outputScript library="js" name="global.js" target="body" />
 <h:outputScript library="js" name="select2.min.js" target="body" />
 <h:outputScript library="vendor" name="datepicker/moment.min.js" target="body" />
 <h:outputScript library="vendor" name="datepicker/daterangepicker.js" target="body" />
-
-</h:body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</h:body>
 </html>

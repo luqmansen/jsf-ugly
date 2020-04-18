@@ -6,6 +6,6 @@ import javax.faces.bean.ManagedBean;
 public class First {
 
     public String getMessage(){
-        return "Yaay !!!";
+        return "We're Home, Yaay !!!";
     }
 }

@@ -4,27 +4,28 @@
 [![HitCount](http://hits.dwyl.com/luqmansen/jsf-ugly.svg)](http://hits.dwyl.com/luqmansen/jsf-ugly)
 [![Twitter](https://img.shields.io/twitter/follow/luqmansen_?label=Follow&style=social)](https://twitter.com/luqmansen_)
 
-Ugly JavaServer Faces App
+JavaServer Faces App
 
 ## Demo
 http://jsfu.herokuapp.com/
 
 
-## Requirements
+## Requirements (for development)
 - open jdk version 11
 - maven 3.6.3
 - docker
+- docker-compose
 
 ## Running
+#### Run Container from Dockerhub
+```
+docker run luqmansen/jsf-ugly
+```
 #### Development
 ```bash
 make build
 make run
  ```
-#### From Dockerhub
-```
-docker pull luqmansen/jsf-ugly
-```
 App will running on localhost:8080
 
 ## Notes
