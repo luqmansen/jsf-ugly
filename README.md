@@ -11,9 +11,9 @@ JavaServer Faces App
 http://jsfu.herokuapp.com/
 
 #### On EC2 
-(Sometimes I turn it off)
+(Sometimes went off)
 
-http://34.201.45.72/ 
+http://54.174.72.185/
 
 
 ## Requirements
