@@ -7,7 +7,7 @@
 JavaServer Faces App
 
 ## Demo
-#### On Heroku
+#### On Heroku (Broken, not fixed yet)
 http://jsfu.herokuapp.com/
 
 #### On EC2 
@@ -56,12 +56,13 @@ App will running on localhost:8080
    \*) Make sure no app running on port 80 (eg. NGINX), otherwise you have to setup your reverse proxy
    
 ### Heroku Container Registry
+Note: This deployment currently broken, please refer to notes 1
 1. make sure heroku-cli installed
 2. Then refer to this [official documentation](https://devcenter.heroku.com/articles/container-registry-and-runtime)
  
 
 ## Notes
-- Currently the app depends on database that running on container, further update (not likely) will make the db configuration  decoupled from the file.
+- Currently the app depends on database that running on container, further update (not likely) will decouple the db configuration  .
 - Image used in docker is tomcat slim version which is bare minimum tomcat.
 If you want to full tomcat version, use non slim version but make sure 
 use version that support jdk 11. 
