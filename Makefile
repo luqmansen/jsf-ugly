@@ -1,5 +1,5 @@
 build:
-	rm -rf ./target/
+	rm -rf ./target/*
 	mvn package
 	docker-compose build
 

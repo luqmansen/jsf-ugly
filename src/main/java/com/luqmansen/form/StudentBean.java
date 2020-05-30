@@ -7,7 +7,8 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.validator.ValidatorException;
 import java.beans.BeanProperty;
-import java.util.Date;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.List;
 
 @ManagedBean(name = "StudentBean", eager = true)
@@ -28,6 +29,9 @@ public class StudentBean {
     private String isRecommend;
     private String additionalComment;
 
+    public ArrayList studentsList() {
+        return DatabaseOps.getStudentsListFromDB();
+    }
 
     public List<String> getLikeAbout() {
         return likeAbout;
@@ -155,5 +159,10 @@ public class StudentBean {
         }
         FacesContext.getCurrentInstance().addMessage(null, message);
         return outcome;
+    }
+
+    @BeanProperty
+    public String saveStudentDetails(StudentBean newStudentObj) {
+        return DatabaseOps.saveStudentDetailsInDB(newStudentObj);
     }
 }
