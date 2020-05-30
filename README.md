@@ -25,9 +25,10 @@ http://54.174.72.185/
 + maven 3.6.3
 
 ## Running
-#### Pull directly from Dockerhub
+#### Pull image directly from Dockerhub using docker-compose
 ```
-docker run --env PORT=8080 -p 8080:8080 luqmansen/jsf-ugly
+wget https://git.io/JfKDM
+docker-compose up
 ```
 #### Development
 ```bash
@@ -44,9 +45,13 @@ App will running on localhost:8080
     ```
     apt install docker.io
     ```
-2. Run!
+2. Download docker-compose script
+   ```
+   wget https://git.io/JfKDM
+   ```
+3. Run!
     ```
-    docker run --env PORT=8080 -p 80:8080 luqmansen/jsf-ugly
+    docker-compose up
     ```
    \*) Make sure no app running on port 80 (eg. NGINX), otherwise you have to setup your reverse proxy
    
@@ -56,6 +61,7 @@ App will running on localhost:8080
  
 
 ## Notes
+- Currently the app depends on database that running on container, further update (not likely) will make the db configuration  decoupled from the file.
 - Image used in docker is tomcat slim version which is bare minimum tomcat.
 If you want to full tomcat version, use non slim version but make sure 
 use version that support jdk 11. 
